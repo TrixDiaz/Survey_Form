@@ -1,0 +1,171 @@
+/*---------------------*\
+  #Reset 
+\*----------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  
+  /*---------------------*\
+    #Reusable 
+  \*----------------------*/
+  .container{
+    width: 100%;
+    padding-inline: 20px;
+    padding-block: 15px;
+  }
+
+  /*---------------------*\
+    #Buttons 
+  \*----------------------*/
+  
+  :root {
+    /*---------------------*\
+    #Color 
+  \*----------------------*/
+    --orange: #FF4900;
+    --orange-hover: rgba(255, 102, 0, 0.871);
+    --orange-active: rgba(255, 102, 0, 0.63);
+    --white: #ffffff;
+    --black: #252526;
+    --lime-green: #8FD6B0;
+  }
+  
+  /*---------------------*\
+    #Body
+  \*----------------------*/
+  body {background: linear-gradient(45deg, #FFFEC4,#C4D7B2);}
+  main{
+    width: auto;
+    box-shadow: 0 0 20px var(--black);
+    border-radius: 0px;
+    margin: 0px
+  }
+  hr {
+    height: 2px;
+    background-color: var(--orange);
+    border-color: var(--orange);
+  }
+  fieldset{
+    width: 100%;
+  }
+  
+  /*---------------------*\
+    #Main Content
+  \*----------------------*/
+
+  .title{
+    text-align: center;
+    color: var(--orange);
+  }
+  .title:hover{
+    color: var(--orange-hover);
+  }
+  title:active{
+    color: var(--orange-active);
+  }
+  
+  .fullName{
+    display: block;
+    gap: 5px;
+    justify-content: center;
+  }
+  .name > label,
+  .name > input{
+    display: block;
+    padding-block: 5px;
+  }
+  .name > input{
+    border-radius: 5px;
+    height: 3vh;
+    width: 100%
+  }
+  .email > label,
+  .email > input{
+    display: block;
+  }
+  .email > input{
+    width: 100%;
+    border-radius: 5px;
+    height: 3vh;
+  }
+
+  .ratings{
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+  }
+  i{
+    font-size: 20px;
+    transition: color 0.2s ease;
+  }
+  i.active{
+    color: #ff9c1a;
+  }
+  
+  .FeedbackService{
+    display: block;
+  }
+  
+  .service{
+    display: flex; 
+    justify-content: center;
+    padding-block: 3px;
+  }
+  .submit{
+    width: 100%;
+    padding: 10px;
+    color: var(--white);
+    font-size: medium;
+    font-weight: 600;
+    background-color: var(--orange-hover);
+    border-radius: 5px;
+    border: none;
+  }
+  .submit:hover{
+    background-color:lightcoral;;
+  }
+ 
+  
+  .thanks{
+    padding-block: 10px;
+    text-align: center;
+    color: var(--orange);
+  }
+  .thanks:hover{
+    color: var(--orange-hover);
+  }
+  .thanks:active{
+    color: var(--orange-active);
+  }
+  
+  .comment textarea{
+    width: 100%;
+  }
+
+  
+  /*---------------------*\
+    #Responsive  
+  \*----------------------*/
+  /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+  main{
+    border-radius: 15px;
+    margin-block: 50px;
+    margin-inline: 100px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  main{
+    border-radius: 15px;
+    margin-block: 100px;
+    margin-inline: 400px;
+  }
+}

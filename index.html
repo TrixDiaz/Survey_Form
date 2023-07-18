@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><h1>Survey Form</h1></title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <main>
+        
+        <div class="container">
+          <div class="title"><h1 id="title">Survey Form</h1></div>
+        </div>
+
+        <div class="container">
+            <hr>
+        </div>
+
+        <form action="" id="survey-form">
+            <div class="container">
+                <div class="fullName">
+                    <div class="name">
+                        <label for="firstName">First Name*</label>
+                        <input type="text" name="name" id="name" placeholder="Enter First Name" required>
+                    </div>
+                    <div class="name">
+                        <label for="name">Last Name*</label>
+                        <input type="text" name="name" id="name" placeholder="Enter Last Name" required>
+                    </div>
+                    </div>  
+            </div>
+
+            <div class="container">
+                <div class="email">
+                    <label for="email">Email Address*</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Email Address" required>
+                </div>  
+            </div>
+
+            <div class="container">
+                <fieldset class="ratings">
+                    <legend>How would your rate our service?</legend>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </fieldset>
+            </div>
+
+            <div class="container">
+                   <fieldset class="FeedbackService">
+                    <legend>Tell us about your Good or Bad Experience:</legend>
+
+                    <div class="service">
+                        <input type="radio" class="feedback" name="feedback" id="number">
+                        <label for="feedback">Product</label>
+                    </div>
+
+                    <div class="service">
+                        <input type="radio" class="feedback" name="feedback" id="number">
+                        <label for="feedback">Facilities</label>
+                    </div>
+                    
+                    <div class="service">
+                        <input type="radio" class="feedback" name="feedback" id="number">
+                        <label for="feedback">Personnel</label>
+                    </div>
+
+
+                    <div class="service">
+                        <input type="radio" class="feedback" name="feedback" id="number">
+                        <label for="feedback">Technology</label>
+                    </div>
+
+                    <div class="service">
+                        <input type="radio" class="feedback" name="feedback" id="number">
+                        <label for="feedback">Covid Safety</label>
+                    </div>
+                     
+                   </fieldset>
+            </div>
+
+            <div class="container">
+                <div class="comment">
+                   <label for="comment"><strong>Comment</strong></label>
+                   <textarea name="" id="" cols="" rows="5"></textarea>
+                </div>
+            </div>
+
+            <div class="container">
+                <input type="submit" class="submit" value="Submit" id="submit">
+            </div>
+
+        </form>
+
+        <div class="container"><hr></div>
+
+        <footer>
+            <div class="title">
+             <h4><a href="#" class="thanks">Visit out Link</a></h5>
+             <p class="thanks" id="description">Thanks for Visiting US</p>
+            </div>
+         </footer>
+       
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
